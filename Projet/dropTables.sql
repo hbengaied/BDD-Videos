@@ -1,0 +1,26 @@
+alter table Historique_Video drop CONSTRAINT FK_IdVideo_Historique;
+alter table Historique_Video drop CONSTRAINT FK_IdUtilisateur_Historique;
+alter table Suggestions drop CONSTRAINT FK_IdUtilisateur_Suggestions;
+alter table Suggestions drop CONSTRAINT FK_IdEpisode_Suggestions;
+alter table Emission drop CONSTRAINT FK_IdVideo_Emission;
+alter table Emission drop CONSTRAINT FK_IdCategorie_Emission;
+alter table categorieUtilisateur drop CONSTRAINT FK_IdCategorie_CateUtili;
+alter table categorieUtilisateur drop CONSTRAINT FK_IdUtilisateur_CateUtili;
+alter table Abonnement drop CONSTRAINT FK_IdUtilisateur_Abonnement;
+alter table Abonnement drop CONSTRAINT FK_IdEmission_Abonnement;
+alter table Episode drop CONSTRAINT FK_IdVideo_Episode;
+alter table Episode drop CONSTRAINT FK_IdEmission_Episode;
+alter table Favoris drop CONSTRAINT FK_IdVideo_Favoris;
+alter table Favoris drop CONSTRAINT FK_IdUtilisateur_Favoris;
+
+DROP TABLE Emission;
+DROP TABLE Categorie;
+DROP TABLE categorieUtilisateur;
+DROP TABLE Abonnement;
+DROP TABLE Episode;
+DROP TABLE Utilisateur;
+DROP TABLE Favoris;
+DROP TABLE Video;
+DROP TABLE Diffusion;
+DROP TABLE Historique_Video;
+DROP TABLE Suggestions;
